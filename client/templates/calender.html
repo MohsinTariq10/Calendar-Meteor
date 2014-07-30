@@ -1,0 +1,26 @@
+<template name ="calendar">
+    {{#if showEditEvent}}
+        {{> editEvent}}
+    {{/if}}
+    <input type="hidden" name="lastMod" value="{{lastMod}}" id="lastMod"/>
+    <div id="cal"></div>
+
+</template>
+
+<template name="editEvent">
+    <div id="example" class="modal">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">x</a>
+            <h3>Edit Event</h3>
+        </div>
+        <div class="modal-body">
+            <h4>body</h4>
+            <p>text</p>
+        </div>
+        <div class="modal-footer">
+            <a class="btn-success btn" href="">Save</a>
+            <a class="btn" data-dismiss="modal">Cancel </a>
+        </div>
+
+    </div>
+</template>
